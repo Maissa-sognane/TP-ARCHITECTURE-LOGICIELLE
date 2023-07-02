@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond "%{REQUEST_URI}" "article"
+RewriteRule "article/([0-9]+)" "index.php?categorie=home&page=$1"
+RewriteRule "articles" "index.php"
+RewriteRule "articles" "articles?categorie=home"
+RewriteRule "login" "vue/accounts/login.php"
+RewriteRule "dashbord" "vue/users/user-home.php"
+RewriteRule "add-article" "dashbord?article=add"
+RewriteRule "add-categorie" "dashbord?categorie=add"
